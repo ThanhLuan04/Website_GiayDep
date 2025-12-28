@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="..//JS/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/login_signup.css">
+    <script src="../font-awesome/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/js/all.min.js"></script>
+    <title>Đăng nhập và đăng ký</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../HTML/home.html"><img src="../Image/logo.png" alt="" class="logo"></a>
+            <div class="menu">
+                <ul class="menu-parent">
+                    <li>
+                        <a href="">GIÀY NỮ</a>
+                        <ul class="menu-child">
+                            <li><a href="../HTML/caogot.html">CAO GÓT</a></li>
+                            <li><a href="../HTML/depnu.html">DÉP NỮ</a> </li>
+                            <li><a href="../HTML/thethaonu.html">GIÀY THỂ THAO NỮ</a></li>
+                            <li><a href="../HTML/sandalnu.html">SANDAL NỮ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">GIÀY NAM</a>
+                        <ul class="menu-child">
+                            <li><a href="../HTML/depnam.html">DÉP NAM</a> </li>
+                            <li><a href="../HTML/thethaonam.html">GIÀY THỂ THAO NAM</a></li>
+                            <li><a href="../HTML/sandalnam.html">SANDAL NAM</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../HTML/gioithieu.html">CHI TIẾT</a></li>
+                    <li><a href="../HTML/allSP.html">TẤT CẢ SẢN PHẨM</a>
+                    </li>
+                </ul>
+            </div>
+            <form action="" class="search">
+                <input type="text" class="search-text" placeholder="Tìm Kiếm">
+                <button type="submit" class="search-button">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </button>
+            </form>
+            <div class="user">
+                <div class="anh">
+                    <a href="../HTML/login_signup.html"><img src="../Image/nguoi-removebg-preview.png" alt="" class="nguoi"></a>
+                    <a ><img src="../Image/giohang-removebg-preview.png" alt="" class="giohang" data-bs-toggle="modal" data-bs-target="#modalId"></a>
+                </div>
+            </div>
+        </header>
+        <div class="baoquanh">
+            <nav>
+                <div class="khung mt-3">
+                    <h3 class="login">ĐĂNG NHẬP</h3>
+                    <form >
+                        <div class="mb-3 mt-3">
+                            <label for="" class="mb-3 username">Tên đăng nhập :</label> 
+                            <input type="text" class="form-control" id="login-username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="mb-3 username">Mật khẩu :</label>
+                            <input type="password" class="form-control" id="login-pwd">
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-secondary"  style="width: 40%; height: 40px;" id="login">Đăng nhập</button>
+                            <span> <a href="#" style="text-decoration: none; color: red;"> Quên mật khẩu?</a></span>
+                        </div>
+                    </form>
+                    <div class="text-divider">Hoặc</div>
+                    <div class="buttonn">
+                        <button type="submit" class="bu1">
+                            <i class="fa-brands fa-facebook fa-xl fa-bounce" style="color: #74C0FC;"></i>
+                            <span>Facebook</span>
+                        </button>
+                        <button type="submit" class="bu2">
+                            <i class="fa-brands fa-google fa-bounce fa-xl" ></i>
+                            <span>Google</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <section>
+                <div class="khung mt-3">
+                    <h3 class="login">ĐĂNG  KÝ</h3>
+                    <form >
+                        <div class="mb-3 mt-3">
+                            <label for="" class="mb-3 username">Tên đăng nhập :</label> 
+                            <input type="text" class="form-control" id="signin-username">
+                            <span class="error" id="signin-usernameError"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="mb-3 username">Số điện thoại :</label>
+                            <input type="text" class="form-control" id="phone"><span class="error" id="phoneError"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="mb-3 username">Email :</label>
+                            <input type="text" class="form-control" id="email"><span class="error" id="emailError"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="mb-3 username">Mật khẩu :</label>
+                            <input type="password" class="form-control" id="signin-pwd"><span class="error" id="signin-pwdError"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="mb-3 username">Nhắc lại mật khẩu :</label>
+                            <input type="password" class="form-control" id="pwdComfirm"><span class="error" id="pwdComfirmError"></span>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-secondary" style="width: 40%; height: 40px;" id="register">Đăng ký</button>
+                            <div id="resultMessage"></div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="chua">
+                <div class="left">
+                    <p>GỌI MUA HÀNG ONLINE (08:00 - 21: 00 mỗi ngày)</p>
+                    <a href="#" style="text-decoration: none; color: black;"><h4>0389.097.037</h4></a>
+                    <span>Tất cả các ngày trong tuần (Trừ tết Âm Lịch)</span> <br><br>
+                    <p>GÓP Ý & KHIẾU NẠI (08:30 - 20:30)</p>
+                    <a href="#" style="text-decoration: none; color: black;"><h4>0389.097.037</h4></a>
+                    <span>Tất cả các ngày trong tuần (Trừ tết Âm Lịch)</span>
+                </div>
+                <div class="mid">
+                    <p>THÔNG TIN</p>
+                    <ul>
+                        <li><a href="#">Giới thiệu về Grooger shop</a></li>
+                        <li><a href="#">Than Phiền Góp Ý</a></li>
+                        <li><a href="#">Chính sách và quy định</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <p>FAQ</p>
+                    <ul>
+                        <li><a href="#">Vận chuyển</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách đổi trả bảo hành</a></li>
+                    </ul>
+                    <div class="app">
+                    <a href="https://www.tiktok.com/foryou"><i class="fa-brands fa-tiktok fa-xl"></i></a> 
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        <a href="https://www.whatsapp.com/?lang=vi_VN"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Giỏ hàng -->
+        <div  class="modal fade" id="modalId"  tabindex="-1"  role="dialog" aria-labelledby="modalTitleId"  aria-hidden="true" >
+            <div  class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document" >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId"> Các sản phẩm của bạn </h5>
+                        <button  type="button"  class="btn-close"  data-bs-dismiss="modal"  aria-label="Close" ></button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">  Xác nhận</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/login_signup.js"></script>
+</body>
+</html>

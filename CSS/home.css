@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    max-width: 100%;
+}
+.header{
+    margin-top: 250px;
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+.header img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .5;
+    transition: .5s ease;
+    border-radius: 20px;
+    margin: 1%;
+}
+.header img:hover{
+    width: 25%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.caogot > .giay1 > a,
+.caogot > .giay2 > a,
+.caogot > .giay3 > a,
+.caogot > .giay4 > a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    margin: auto; 
+    justify-content: space-around;
+    position: fixed;
+    background: none;
+    top: 0;
+}
+header:hover{
+    background: white;
+}
+.logo{
+    width: 177px;
+    height: 113px;
+    vertical-align: middle;
+}
+.menu .menu-parent{
+    width: 650px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu .menu-parent > li{
+    display: inline-block;
+    position: relative; 
+    text-align: center;
+    width: 15%;
+}
+
+.menu .menu-parent > li:last-child{
+    width: 25%;
+}
+.menu .menu-child > li{
+    list-style-type: none;
+    width: 100%;
+    text-align: left;
+}
+ 
+.menu .menu-child > li:first-child{
+    padding-top: 0;
+}
+.menu-parent .menu-child{
+    display: none;
+    position: absolute;
+    padding: 0 10px 10px;
+    background-color: white;
+    width: 10rem;
+    z-index: 1;
+    top: 90px;
+}
+.menu-parent .menu-child a{
+    text-decoration: none;
+    color: black;
+}
+.menu-parent > li > a{
+    color: black;
+    text-decoration: none;
+    line-height: 110px;
+    display: inline-block;
+}
+.menu-parent >li:hover> a,
+.menu-child > li:hover > a{
+    font-weight: bold;
+}
+.menu-parent li:hover .menu-child{
+    display: block;
+}
+.menu-child li{
+    padding-top: 15px;
+}
+.search{
+    width: 400px;
+    margin-top: 40px;
+}
+.search .search-button{
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.giohang{
+    cursor: pointer;
+}
+.search .search-text{
+    padding: 6px;
+    width: 83%;
+    border-radius: 5px;
+    background: none;
+}
+.user{
+    width: 200px;
+    display: flex;
+}
+.user .anh .nguoi{
+    height: 100%;
+}
+.anh{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    margin-left: 40px;
+    margin-top: 27px;
+}
+.user .anh .giohang{
+    margin-top: 13px;
+    height: 58%;
+}
+.section1{
+    width: 100%;
+    margin-top: 50px;
+}
+.caogot{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.giay1,.giay2,.giay3,.giay4{
+    width: 23%;
+}
+.dai{
+    width: 100%;
+}
+.xemall{
+    text-decoration: none;
+    color: black;
+}
+
+.title-price{
+    display: grid;
+}
+.price{
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 20px;
+}
+.giua{
+    text-align: center;
+}
+
+
+footer{
+    margin-top: 80px;
+    width: 100%;
+}
+.chua{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    margin: auto;
+    height: 300px;
+}
+footer .left,.mid,.right{
+    width: 30%;
+}
+footer .left,.right,.mid{
+    margin-top: 10px;
+}
+.mid ul li a{
+    text-decoration: none;
+    color: black;
+}
+.right ul li a{
+    text-decoration: none;
+    color: black;
+}
+.app{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.app a{
+    color: black;
+}

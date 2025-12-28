@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    max-width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    margin: auto; 
+    justify-content: space-around;
+
+}
+.giohang{
+    cursor: pointer;
+}
+.logo{
+    width: 177px;
+    height: 113px;
+    vertical-align: middle;
+}
+.menu .menu-parent{
+    width: 650px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu .menu-parent > li{
+    display: inline-block;
+    position: relative; 
+    text-align: center;
+    width: 15%;
+}
+
+.menu .menu-parent > li:last-child{
+    width: 25%;
+}
+.menu .menu-child > li{
+    list-style-type: none;
+    width: 100%;
+    text-align: left;
+}
+ 
+.menu .menu-child > li:first-child{
+    padding-top: 0;
+}
+.menu-parent .menu-child{
+    display: none;
+    position: absolute;
+    padding: 0 10px 10px;
+    background-color: white;
+    width: 10rem;
+    z-index: 1;
+    top: 90px;
+}
+.menu-parent .menu-child a{
+    text-decoration: none;
+    color: black;
+}
+.menu-parent > li > a{
+    color: black;
+    text-decoration: none;
+    line-height: 110px;
+    display: inline-block;
+}
+.menu-parent >li:hover> a,
+.menu-child > li:hover > a{
+    font-weight: bold;
+}
+.menu-parent li:hover .menu-child{
+    display: block;
+}
+.menu-child li{
+    padding-top: 15px;
+}
+.search{
+    width: 400px;
+    margin-top: 40px;
+}
+.search .search-button{
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.search .search-text{
+    padding: 6px;
+    width: 83%;
+    border-radius: 5px;
+    background: none;
+}
+.user{
+    width: 200px;
+    display: flex;
+}
+.user .anh .nguoi{
+    height: 100%;
+}
+.anh{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    margin-left: 40px;
+    margin-top: 27px;
+}
+.user .anh .giohang{
+    margin-top: 13px;
+    height: 58%;
+}
+
+.section{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+.section .sec1,.sec2{
+    width: 50%;
+}
+.tren{
+    width: 70%;
+    margin-left: 20px;
+}
+
+.danhgia{
+    line-height: 55px;
+}
+.danhgia span{
+    font-size: 20px;
+}
+.baoquanh{
+    display: flex;
+}
+.start_wrap{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.tren .start_wrap input{
+    appearance: none;
+}
+input::before{
+    content: "\2605";
+    color: #ccc;
+    font-size: 2rem;
+    cursor: pointer;
+}
+input:checked::before,input:checked ~ input::before{
+    color: #ffb800;
+}
+.chonsize{
+    width: 100%;
+    display: flex;
+}
+.chonchu{
+    width: 20%;
+    font-size: 20px;
+    line-height: 76px;
+}
+.choosesize{
+    width: 80%;
+    margin: 20px 0 20px 0;
+}
+.size{
+    width: 50px;
+    padding: 5px 0;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.border-red{
+    border:1px solid #ed1c24;
+}
+.bu{
+    width: 100%;
+    display: flex;
+    height: 40px;
+}
+.hang1{
+    width: 20%;
+    color: white;
+    background-color: #ed1c24;
+    border: none;
+    font-size: 20px;
+}
+.hang2{
+    width: 50%;
+    margin-left: 30px;
+    color: #ed1c24;
+    background-color: white;
+    border: 1px solid #ed1c24;
+}
+.hang{
+    height: 100%;
+    margin-bottom: 8px;
+}
+.chu{
+    font-size: 20px;
+    line-height: 38px;
+    margin-left: 10px;
+}
+.duoi{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.d-block{
+    height: 800px;
+}
+.hangduoi{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+.hangduoi .img1,.img2,.img3{
+    width: 30%;
+    text-align: center;
+}
+.img-center{
+    display: flex;
+    justify-content: center; 
+    /* align-items: center; */
+}
+footer{
+    margin-top: 80px;
+    width: 100%;
+}
+.chua{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    margin: auto;
+    height: 300px;
+}
+footer .left,.mid,.right{
+    width: 30%;
+}
+footer .left,.right,.mid{
+    margin-top: 10px;
+}
+.mid ul li a{
+    text-decoration: none;
+    color: black;
+}
+.right ul li a{
+    text-decoration: none;
+    color: black;
+}
+.app{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.app a{
+    color: black;
+}
